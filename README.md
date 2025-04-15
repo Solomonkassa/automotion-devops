@@ -61,7 +61,7 @@ sudo dpkg -i automotion-devops.deb
 ### 🌐 Method 2: Install from Custom APT Repo
 
 ```bash
-echo "deb [trusted=yes] https://yourdomain.com/apt ./" | sudo tee /etc/apt/sources.list.d/automotion.list
+echo "deb [trusted=yes] https://toolkit.jedantechnology.site/apt ./" | sudo tee /etc/apt/sources.list.d/automotion.list
 sudo apt update
 sudo apt install automotion
 ```
@@ -166,7 +166,7 @@ We welcome modules, templates, and patches.
 ## 📝 License
 
 **MIT License**  
-© [Jedan Code Academy](https://jedancodeacademy.com)
+© [Jedan Code Academy](https://jedantechnology.site)
 
 ---
 
