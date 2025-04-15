@@ -1,51 +1,69 @@
-# Automotion DevOps Toolkit
+# Automotion++ Enterprise DevOps Platform
 
-**Enterprise-Grade Shell Automation Framework for Modern DevOps Workflows**  
-> A robust CLI-first automation suite to manage Docker, NGINX, PostgreSQL, MySQL, Kubernetes, CI/CD, Cloud provisioning, and more using advanced modular shell scripting. Ideal for production-grade infrastructure and system administration.
-
----
-
-## 🌟 Features
-
-- ✅ **APT Installable CLI** — `sudo apt install automotion`
-- ✅ **Multi-module Support** — Docker, NGINX, PostgreSQL, MySQL, Kubernetes, CI/CD
-- ✅ **Dynamic Configuration** — `.env` templates, runtime variables
-- ✅ **Production-ready NGINX & Docker Setup**
-- ✅ **Kubernetes Deployment Manifests**
-- ✅ **Robust Logging and Error Handling**
-- ✅ **Backup & Restore Modules**
-- ✅ **Self-hostable APT repository for your organization**
+**Next-Gen Infrastructure Automation Suite with AIOps Integration**
+> A comprehensive CLI and API-driven platform for managing cloud-native infrastructure, database orchestration, CI/CD pipelines, and observability with built-in security compliance checks.
 
 ---
 
-## 🗂️ File Structure
+## 🌟 Core Capabilities
+
+- ✅ **Multi-Cloud Provisioning** (AWS/GCP/Azure/Terraform)
+- ✅ **Database Cluster Management** (PostgreSQL/MySQL/MongoDB/Redis)
+- ✅ **Kubernetes Operator Framework** (CRDs, Helm, ArgoCD)
+- ✅ **Advanced Networking** (NGINX+, HAProxy, Traefik, Istio)
+- ✅ **GitOps Workflows** (GitHub Actions, GitLab CI, Argo Workflows)
+- ✅ **Security & Compliance** (Vault, Cert Manager, CIS Benchmarks)
+- ✅ **Observability Stack** (Prometheus, Grafana, ELK, OpenTelemetry)
+- ✅ **AI-Powered Anomaly Detection** (ML-based log analysis)
+
+---
+
+## 🗂️ Enterprise File Structure
 
 ```shell
-automotion-devops/
-├── DEBIAN/                       # Control file for dpkg (.deb packaging)
-├── usr/
-│   └── local/
-│       └── bin/
-│           └── automotion       # CLI executable launcher
-├── opt/
-│   └── automotion/              # Core framework
-│       ├── core/                # Logger, env loader, CLI base
-│       ├── modules/             # NGINX, Docker, DBs, K8s, CI/CD
-│       │   ├── docker/
-│       │   ├── nginx/
-│       │   ├── databases/
-│       │   │   ├── postgres/
-│       │   │   └── mysql/
-│       │   ├── k8s/
-│       │   ├── ci-cd/
-│       │   └── cloud/
-│       ├── templates/           # .env, .conf, .yml templates
-│       ├── logs/                # Audit and task logs
-│       ├── docs/                # Developer documentation
-│       └── assets/              # Banners, logos, shell colors
-```
+/opt/automotion-enterprise/
+├── bin/                          # CLI entrypoints
+│   ├── autoctl                   # Main CLI
+│   ├── autoctl-ai                # AIOps assistant
+│   └── autoctl-sec               # Security scanner
+├── lib/                          # Core libraries
+│   ├── framework/
+│   │   ├── auth.sh               # IAM integration
+│   │   ├── crypto.sh             # PKI management
+│   │   └── audit.sh              # Compliance logging
+│   └── modules/
+│       ├── cloud/
+│       │   ├── aws/              # AWS Landing Zone
+│       │   ├── gcp/              # GCP Foundation
+│       │   └── terraform/        # Multi-cloud IaC
+│       ├── databases/
+│       │   ├── postgres/         # HA Patroni clusters
+│       │   ├── mysql/            # Group replication
+│       │   └── mongodb/          # Sharded clusters
+│       ├── k8s/
+│       │   ├── operators/        # Custom CRDs
+│       │   ├── helm/             # Chart repository
+│       │   └── gitops/           # ArgoCD configs
+│       ├── networking/
+│       │   ├── nginx/            # OSS/Plus configurations
+│       │   ├── haproxy/          # TCP/HTTP load balancing
+│       │   └── service-mesh/     # Istio/Linkerd
+│       └── pipelines/
+│           ├── github-actions/   # Composite actions
+│           ├── gitlab-ci/        # Templates
+│           └── tekton/           # Kubernetes-native CI/CD
+├── etc/
+│   ├── compliance/               # CIS benchmarks
+│   ├── policies/                 # OPA/Gatekeeper
+│   └── secrets/                  # Vault templates
+├── var/
+│   ├── log/                      # Structured JSON logs
+│   ├── cache/                    # Terraform states
+│   └── lib/                      # Database backups
+├── api/                          # REST/gRPC interfaces
+└── ui/                           # React dashboard
 
----
+```
 
 ## ⚙️ Installation
 
