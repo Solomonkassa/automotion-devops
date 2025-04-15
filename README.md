@@ -172,6 +172,6 @@ We welcome modules, templates, and patches.
 
 ## 👨‍💻 Author
 
-Built with 💚 by [Solomon Kassa](https://github.com/solomon-kassa)  
+Built with 💚 by [Solomon Kassa](https://solomonkassa.et)  
 Empowering DevOps engineers with elegant, scalable automation tools.
 
